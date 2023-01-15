@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<!-- Regular parallel testing-->
+<suite name="Smoke Tests" parallel="methods">
+    <test name="Homepage">
+        <classes>
+            <class name="com.wipro.tests.TestHomepage"/>
+        </classes>
+    </test>
+    <test name="Sandbox">
+        <classes>
+            <class name="com.wipro.tests.TestSandbox"/>
+        </classes>
+    </test>
+
+</suite>
+
+<!-- Cross browser testing-->
+
+<!--<suite name="Smoke Tests" parallel="tests">-->
+<!--    &lt;!&ndash;This is needed in order to take onTestFailure() method to work&ndash;&gt;-->
+<!--    <listeners>-->
+<!--        <listener class-name="com.wipro.utilities.TestListener"/>-->
+<!--    </listeners>-->
+
+<!--    <test name="Chrome tests">-->
+<!--        <parameter name="browser" value="chrome"/>-->
+<!--        <classes>-->
+<!--            <class name="com.wipro.tests.TestHomepage"/>-->
+<!--        </classes>-->
+<!--    </test>-->
+
+<!--    <test name="Safari tests">-->
+<!--        <parameter name="browser" value="safari"/>-->
+<!--        <classes>-->
+<!--            <class name="com.wipro.tests.TestHomepage"/>-->
+<!--        </classes>-->
+<!--    </test>-->
+
+<!--</suite>-->
